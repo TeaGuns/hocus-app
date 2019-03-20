@@ -1,0 +1,65 @@
+@import 'base';
+
+div {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.pricing-header {
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+}
+
+.price-plan {
+    border: 1px solid $brand-dark;
+    padding: 1em 0;
+    background-color: $white;
+    .price-plan-header {
+        padding-bottom: 2em;
+        h1, h2, h3, p {
+            line-height: 0.35em;
+        }
+        .subtext {
+            color: $gray;
+            font-size: 0.85em;
+        }
+    }
+    p {
+        line-height: 1em;
+    }
+    .btn-holder {
+        justify-content: center;
+        align-content: center;
+        display: flex;
+    }
+}
+
+.button {
+    background-color: $brand-primary;
+    border: none;
+    width: 25%;
+    min-width: 200px;
+    color: $brand-dark;
+    text-decoration: none;
+    font-size: 16px;
+    height: 4em;
+    font-weight: 700;
+    cursor: pointer;
+    p {
+        display: inline;
+    }
+    svg {
+        fill: $brand-dark;
+        margin-left: .5em;
+    }
+}
+.button:hover {
+    background-color: $brand-dark;
+    color: $white;
+    svg {
+        fill: $white;
+    }
+}
+
+

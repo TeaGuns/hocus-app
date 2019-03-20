@@ -1,0 +1,17 @@
+.alert {
+    background-color: $brand-light;
+    border: 1px solid $brand-primary;
+    margin-top: 1em;
+    padding: 1em 1em;
+    color: $brand-dark;
+}
+
+.alert-error {
+    border: 1px solid $red;
+    background-color: $red-light;
+}
+
+.alert-secondary {
+    border: 1px solid $gray;
+    background-color: $gray-light;
+}

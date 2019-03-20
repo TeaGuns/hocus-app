@@ -1,0 +1,59 @@
+/* Variables */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic");
+html {
+  background-color: #15202B;
+  background-image: url(../images/hocusbg-dark.svg);
+  background-size: 600px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #fff; }
+
+div {
+  box-sizing: border-box; }
+
+a {
+  color: #fff; }
+  a:hover {
+    color: #1DD1A1; }
+
+/* TYPOGRAPHY */
+p {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 0.5em;
+  width: 100%; }
+  table tr:not(:first-child) {
+    background-color: #1b2937;
+    border-left: 4px solid #1DD1A1;
+    margin: 10px 0; }
+    table tr:not(:first-child):hover {
+      background-color: #282C47;
+      cursor: pointer; }
+  table th {
+    padding: 12px 0;
+    text-align: left;
+    color: #fff;
+    padding: 15px;
+    background-color: #15202B; }
+    table th .filterIcon {
+      color: #808086; }
+      table th .filterIcon:hover {
+        color: #1DD1A1;
+        cursor: pointer; }
+  table td {
+    padding: 15px; }
+    table td:nth-child(1) {
+      border-left: 5px solid #1DD1A1; }
+  table .emoji {
+    width: 5%; }
+  table .w {
+    width: 40%; }
+
+.newProjectButton {
+  margin-top: 3em; }
+
+/*# sourceMappingURL=projects.css.map */

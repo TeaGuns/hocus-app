@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Set character encoding for the document -->
+        <meta charset="utf-8">
+        <!-- Viewport for responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Hocus Timer Homepage</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/main.css">   
+    </head>
+    <body>
+        <div id="top-bar"></div>
+<!--Nav-->
+        <div class="container">
+            <div class="row nav">
+                <div class="col-1-n left">
+                    <svg class="logo" width="100%" viewBox="0 0 65 90" xmlns="http://www.w3.org/2000/svg">
+                            <<defs><path id="a" d="M0 .0004h64.689v60H0z"/><path id="c" d="M.0809718 0H64.689v60H.0809718z"/></defs><g fill="none" fill-rule="evenodd"><g><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M62.6102 7.4214c-2.744-4.69-7.918-7.421-13.351-7.421h-33.83c-5.432 0-10.606 2.731-13.35 7.421-2.757 4.712-2.773 10.356-.045 15.079l17.32 30c2.711 4.696 7.568 7.5 12.99 7.5 1.244 0 2.457-.149 3.621-.433 3.245-.794 4.824-4.477 3.154-7.369l-2.591-4.487c-1.313 2.043-3.346 2.289-4.184 2.289-.868 0-3.027-.244-4.33-2.5l-17.32-30c-1.303-2.257-.435-4.249 0-5 .434-.752 1.725-2.5 4.33-2.5h34.641c2.605 0 3.896 1.748 4.33 2.5.434.751 1.303 2.743 0 5l-11.754 20.358c.394.518.761 1.065 1.094 1.642l4.753 8.232 14.567-25.232c2.727-4.723 2.712-10.367-.045-15.079" fill="#1FEAA8" mask="url(#b)"/></g><g transform="translate(0 30)"><mask id="d" fill="#fff"><use xlink:href="#c"/></mask><path d="M62.6552 37.5l-17.32-30c-2.711-4.696-7.568-7.5-12.991-7.5-5.422 0-10.279 2.804-12.99 7.5l-.134.232 5.774 10 3.02-5.232c1.303-2.257 3.462-2.5 4.33-2.5.869 0 3.028.243 4.331 2.5l17.32 30c1.303 2.256.434 4.248 0 5-.434.751-1.725 2.5-4.33 2.5h-34.641c-2.605 0-3.896-1.749-4.33-2.5-.435-.752-1.303-2.744 0-5l7.096-12.291c.92-1.593.911-3.575-.08-5.125-.123-.191-.242-.385-.356-.584l-3.907-6.768-11.212 19.419c-2.717 4.706-2.936 10.553-.245 15.273C4.6932 57.166 9.5722 60 15.0242 60h34.236c5.434 0 10.608-2.733 13.351-7.424 2.756-4.711 2.771-10.354.044-15.076" fill="#ffffff    " mask="url(#d)"/></g><path d="M32.3446 60c-5.422 0-10.278-2.804-12.99-7.5l-17.321-30c-2.711-4.696-2.711-10.304-.001-15C4.7446 2.804 9.6016 0 15.0246 0h17.32v10h-17.32c-2.606 0-3.897 1.749-4.33 2.5-.435.751-1.303 2.744 0 5l17.32 30c1.303 2.256 3.462 2.5 4.33 2.5v10z" fill="#1FEAA8"/></g>
+                    </svg>
+                </div>
+                <div class="col-11-n right">
+                    <ul>
+                        <li><a class="active" href="#">Timer</a></li>
+                        <li><a href="#">Tasks</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li class="dropdown">
+                            <img src="https://ui-avatars.com/api/?background=282D46&color=fff&font-size=0.33&size=128&name=Mac+Reddin" width="50"/>
+                            <a href="#" class="dropbtn"> Mac R. <i class="fas fa-caret-down"></i></a>
+                            <div class="left dropdown-content">
+                                <a href="#">Projects</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Settings</a>
+                                <a href="#">Log Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--Timer-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center timer">
+                    <h1>⏳</h1>
+                    <h1>0:00:49</h1>
+                    <h3>Current Tracked Task Name</h3>
+                </div>
+            </div>
+        </div>
+<!--Timer Controls-->
+        <div class="container">
+            <div class="row taskinput">
+                <div class="col-dyn-fill">
+                    <input type="text" id="task" placeholder="Type a Task to Start Tracking">
+                </div>
+                <div class="col-3">
+                    <button type="button" class="button">START <svg height=".75em" width=".75em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg></button>
+                </div>
+            </div>
+            <div class="row recentprojects">
+                <div class="col-3 center project" id="one">
+                    <h3>👍</h3>
+                    <p class="projectname">Project Name</p>
+                    <p class="clientname">Client Name</p>
+                </div>
+                <div class="col-3 center project" id="two">
+                    <h3>🍉</h3>
+                    <p class="prop">Project Name</p>
+                    <p class="clientname">Client Name</p>
+                </div>
+                <div class="col-3 center project" id="three">
+                    <h3>😀</h3>
+                    <p class="prop">Project Name Too 123</p>
+                    <p class="clientname">Client Name</p>
+                </div>
+                <div class="col-3 center project-new">
+                    <div class="dropdown center">
+                        <a href="#" class="dropbtn"><i class="fas fa-plus"></i> OTHER PROJECTS</a>
+                        <div class="dropdown-content left">
+                            <a href="#" id="modalOpen"><i class="fas fa-plus"></i> New Project</a>
+                            </br>
+                            <a href="#">👾 Project Name <span id="client">Client Name</span></a>
+                            <a href="#">🦍 Project X <span id="client">Client Name</span></a>
+                            <a href="#">💎 Another Project <span id="client">Client Name</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Modal-->
+
+        <div id="projectModal" class="modal">
+            <!-- Modal content -->
+            <div class="container">
+                <div class="row">
+                    <div class="modal-content col-10">
+                        <span class="close">&times;</span>
+                        <h2>New Project</h2>
+                        <form action="" autocomplete="off" method="post">
+                                <div class="row">
+                                        <div class="col-dyn-content">
+                                            <div class="dropdown">
+                                                <div class="dropbtn">
+                                                    <div class="row">
+                                                        <h2 id="emoji">👍</h2>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="dropdown-content">
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-dyn-content">
+                                            <div class="d">
+                                                <div class="dbtn">
+                                                    <div class="row">
+                                                        <div class="selected-color"></div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="d-content">
+                                                    <div class="center colors">
+                                                        <div class="row">
+                                                            <div class="color"></div>
+                                                            <div class="color"></div>
+                                                            <div class="color"></div> 
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="color"></div>
+                                                            <div class="color"></div>
+                                                            <div class="color"></div> 
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="color"></div>
+                                                            <div class="color"></div>
+                                                            <div class="color"></div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-dyn-fill">
+                                            <input type="text" class="input-text" id="email" name="password" placeholder="Project Name">
+                                        </div>
+                                    </div>
+                        <div class="col-12 autocomplete">
+                            <input type="text" class="input-text" id="email" name="clientName" placeholder="Client Name">
+                        </div>
+                        <div class="col-12">
+                            <h4>Billing</h4>
+                            <p>Optional - Add a billable rate to track income for this project.</p>
+                        </div>
+                        <div class="col-2 select">
+                            <select name="slct" id="slct">
+                                <option>USD</option>
+                                <option value="1">EUR</option>
+                                <option value="2">GBP</option>
+                                <option value="3">AUD</option>
+                                <option value="4">CAD</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="input-text" id="email" name="password" placeholder="Billable Rate">
+                        </div>
+                        <div class="col-4 select">
+                            <select name="slct" id="slct">
+                                <option>per hour</option>
+                                <option value="1">per day</option>
+                                <option value="2">per week</option>
+                                <option value="3">per month</option>
+                                <option value="4">flat project fee</option>
+                            </select>
+                        </div>
+                        <div class="row center">
+                            <div class="col-5">
+                                <button type="button" class="button">CREATE PROJECT</button>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Past Entries-->
+        <div class="container">
+            <div class="row center">
+                <div class="col-12 breakdown">
+                    <div class="left" style="width: 15%">
+                        <p>👍</p>
+                        <div id="one"></div>
+                    </div>
+                    <div class="left" style="width: 35%">
+                        <p>🍉</p>
+                        <div id="two"></div>
+                    </div>
+                    <div class="left" style="width: 50%">
+                        <p>😍</p>
+                        <div id="three"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="center row week">
+                <div class="col-6-n left">
+                    <p>This Week</p>
+                </div>
+                <div class="col-6-n right">
+                    <p>7:38</p>
+                </div>
+            </div>
+        </div>
+        <div class="entries container">
+            <div>
+                <div class="date row">
+                    <div class="col-9-n left">
+                        <h4>Today Wednesday May 30</h4>
+                    </div>
+                    <div class="col-3-n right">
+                        <h4>2:05:51</h4>
+                    </div>
+                </div>
+                <div class="entry row">
+                    <div class="col-1-n center icons">
+                        <i class="icon fas fa-play"></i>
+                    </div>
+                    <div class="col-dyn-content left">
+                        <p>Test Task Name</p>
+                    </div>
+                    <div class="col-dyn-fill left">
+                        <div class="dropdown center">
+                            <a href="#" class="dropbtn"><p><span class="clienttwo">Project</span> - Client</p></a>
+                            <div class="dropdown-content left">
+                                <a href="#">👾 Project Name <span id="client">Client Name</span></a>
+                                <a href="#">🦍 Project X <span id="client">Client Name</span></a>
+                                <a href="#">💎 Another Project <span id="client">Client Name</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3-n right trashtime">
+                        <i class="icon fas fa-trash"></i>
+                        <p> 1:04:13</p>
+                    </div>
+                </div>
+                <div class="entry row" id="two">
+                    <div class="col-1-n center icons">
+                        <i class="icon fas fa-play"></i>
+                    </div>
+                    <div class="col-dyn-content left">
+                        <p>Test Task Name</p>
+                    </div>
+                    <div class="col-dyn-fill left">
+                        <div class="dropdown center">
+                            <a href="#" class="dropbtn"><p><span class="clienttwo">Project</span> - Client</p></a>
+                            <div class="dropdown-content left">
+                                <a href="#">👾 Project Name <span id="client">Client Name</span></a>
+                                <a href="#">🦍 Project X <span id="client">Client Name</span></a>
+                                <a href="#">💎 Another Project <span id="client">Client Name</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3-n right trashtime">
+                        <i class="icon fas fa-trash"></i>
+                        <p> 1:04:13</p>
+                    </div>
+                </div>
+                <div class="entry row" id="two">
+                    <div class="col-1-n center icons">
+                        <i class="icon fas fa-play"></i>
+                    </div>
+                    <div class="col-dyn-content left">
+                        <p>Test Task Name</p>
+                    </div>
+                    <div class="col-dyn-fill left">
+                        <div class="dropdown center">
+                            <a href="#" class="dropbtn"><p><span class="clienttwo">Project</span> - Client</p></a>
+                            <div class="dropdown-content left">
+                                <a href="#">👾 Project Name <span id="client">Client Name</span></a>
+                                <a href="#">🦍 Project X <span id="client">Client Name</span></a>
+                                <a href="#">💎 Another Project <span id="client">Client Name</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3-n right trashtime">
+                        <i class="icon fas fa-trash"></i>
+                        <p> 1:04:13</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="date row">
+                    <div class="col-9-n left">
+                        <h4>Today Wednesday May 30</h4>
+                    </div>
+                    <div class="col-3-n right">
+                        <h4>2:05:51</h4>
+                    </div>
+                </div>
+                <div class="entry row">
+                    <div class="col-1-n center">
+                        <svg height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg>
+                    </div>
+                    <div class="col-8-n left">
+                        <p>Task Name - Project - Client</p>
+                    </div>
+                    <div class="col-3-n right">
+                        <p> 1:04:13</p>
+                    </div>
+                </div>
+                <div class="entry row" id="three">
+                    <div class="col-1-n center">
+                        <svg height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg>
+                    </div>
+                    <div class="col-8-n left">
+                        <p>Task Name - Project - Client</p>
+                    </div>
+                    <div class="col-3-n right">
+                        <p> 1:04:13</p>
+                    </div>
+                </div>
+                <div class="entry row" id="two">
+                    <div class="col-1-n center">
+                        <svg height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg>
+                    </div>
+                    <div class="col-8-n left">
+                        <p>Task Name - Project - Client</p>
+                    </div>
+                    <div class="col-3-n right">
+                        <p> 1:04:13</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="styles/components/getModal.js"></script>
+    </body>
+</html>

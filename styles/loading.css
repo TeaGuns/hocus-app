@@ -1,0 +1,20 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+svg {
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: dash 1s infinite; }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 140; }
+  99% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 140; } }
+
+/*# sourceMappingURL=loading.css.map */

@@ -1,0 +1,54 @@
+$brand-primary: #1DD1A1;
+$brand-dark: #15202B;
+$purple-gray: #1b2937;
+$purple-light: #282C47;
+$brand-light: #26daaa;
+$white: #fff;
+$gray-light: #E2E5EB;
+$gray: #808086;
+$red: #ff6b6b;
+$red-light: #f7b7b7;
+
+/* Variables */
+
+$hmarg: 1%;
+$max-width-lg: 1024px;
+$max-col: 12;
+
+$btn-radius: 0;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic");
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    background-color: $brand-dark;
+    background-image: url(../images/hocusbg-dark.svg);
+    background-size: 600px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: $white;
+}
+
+a {
+    color: $white;
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+/* TYPOGRAPHY */
+
+p {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+

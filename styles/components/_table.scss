@@ -1,0 +1,40 @@
+table {
+      border-collapse: separate;
+      border-spacing: 0 0.5em;
+      width: 100%;
+      tr:not(:first-child) {
+            background-color: $purple-gray;
+            border-left: 4px solid $brand-primary;
+            margin: 10px 0;
+            &:hover {
+                  background-color: $purple-light;
+                  cursor: pointer;
+            }
+      }
+      th {
+            padding: 12px 0;
+            text-align: left;
+            color: $white;
+            padding: 15px;
+            background-color: $brand-dark;
+            .filterIcon {
+                  color: $gray;
+                  &:hover {
+                        color: $brand-primary;
+                        cursor: pointer;
+                  }
+            }
+      }
+      td {
+            padding: 15px;
+            &:nth-child(1) {
+                  border-left: 5px solid $brand-primary;
+            }
+      }
+      .emoji {
+            width: 5%;
+      }
+      .w {
+            width: 40%;
+      }
+}

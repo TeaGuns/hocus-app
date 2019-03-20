@@ -1,0 +1,105 @@
+@import 'helpers/base';
+@import 'helpers/rong';
+@import 'components/tooltips';
+@import 'components/nav';
+@import 'components/project';
+@import 'components/entry';
+
+.date-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        &-content {
+            display: none;
+            position: absolute;
+            background-color: $purple-light;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            a {
+                text-decoration: none;
+                display: block;
+                white-space:nowrap;
+                #client {
+                    font-weight: 300;
+                    font-size: 0.75em;
+                }
+                &:hover {
+                    background-color: $brand-primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: inline-block;
+        right: 0;
+        a {
+            padding: 12px 12px;
+            border-bottom: none;
+        }
+    }
+    
+    
+    @media (max-width: 600px) {
+        .nav {
+            .dropbtn {
+                display: none;
+            }
+            .logo {width: 100%;}
+        }
+    }
+}
+
+.big-stat {
+    margin: 4em 0;
+}
+
+.content {
+    padding-left: 1em;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible {
+    display: block;
+    background-color: none;
+    padding: 0;
+    input {
+      position: absolute;
+      left: -9999px;
+      &:focus ~ .collapser{
+        border-color: transparent;
+      }
+    }
+  
+    .collapser {
+      cursor: pointer;
+    }
+  
+    .collapsed {
+      font-size: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+      transition: opacity 0.25s, margin 0.5s 0.25s, font-size 0.5s 0.25s, padding 0.5s 0.25s;
+    }
+  
+    input:checked ~ .collapsed {
+      font-size: 16px;
+      opacity: 1;
+      height: auto;
+      padding: 5px 0;
+      transition: margin 0.25s, padding 0.25s, font-size 0.25s, opacity 0.5s 0.25s;
+    }
+}
+
+
+.top {
+    .estimatedCurrency {
+        font-weight: 700;
+    }
+}

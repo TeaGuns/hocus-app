@@ -1,0 +1,64 @@
+@import 'helpers/base';
+@import 'components/form';
+@import 'components/alerts';
+@import 'helpers/rong';
+@import 'components/button';
+@import 'components/nav';
+
+html {
+      background-color: $white;
+      background-image: none;
+}
+
+.header {
+    background-color: $brand-primary;
+    background-image: url(../images/hocusbg-green.svg);
+    background-size: 600px;
+}
+
+
+.button {
+      background-color: $white;
+      color: $brand-primary;
+}
+
+.navBtn {
+      padding: 0.75em 1.5em;
+}
+
+.outline {
+      border: 1px solid $white;
+      background-color: transparent;
+      color: $white;
+      &:hover {
+            background-color: $white;
+            color: $brand-dark;
+      }
+}
+
+.login {
+      border: 1px solid $white;
+      background-color: transparent;
+      color: $white;
+}
+
+.hero {
+      height: 640px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .heroContent {
+            margin-bottom: 5em;
+            .button {
+                  margin-top: 4em;
+            }
+      }
+}
+
+h1 {
+      font-size: 3em;
+      #who {
+            color: $brand-dark;
+            font-weight: 800;
+      }
+}

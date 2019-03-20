@@ -1,0 +1,82 @@
+#top-bar {
+      background-color: $brand-primary;
+      height: 5px;
+}
+
+.nav {
+    padding-top: 2em;
+    a {
+        text-decoration: none;
+        padding: 1em 0;
+        margin-left: 2em;
+        border-bottom: 5px solid transparent;
+        &:hover {
+            border-bottom: 5px solid $brand-primary;
+        }
+    }
+    .homeNav:hover {
+        color: $brand-dark;
+        border-bottom: 5px solid $brand-dark;
+
+        
+  }
+    .active {
+        border-bottom: 5px solid $brand-primary;
+        color: $brand-primary;
+    }
+    img {
+        vertical-align: middle;
+        border: 2px solid $brand-primary;
+        border-radius: 30px;
+        margin-right: 5px;
+    }
+    .logo {
+        width: 50%;
+    }
+    .button {
+        margin-left: 2em;
+    }
+}
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+      &-content {
+          display: none;
+          position: absolute;
+          background-color: $purple-light;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          a {
+              text-decoration: none;
+              display: block;
+              white-space:nowrap;
+              #client {
+                  font-weight: 300;
+                  font-size: 0.75em;
+              }
+              &:hover {
+                  background-color: $brand-primary;
+                  color: $white;
+              }
+          }
+      }
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: inline-block;
+      right: 0;
+      a {
+          padding: 12px 12px;
+          border-bottom: none;
+      }
+  }
+
+@media (max-width: 600px) {
+      .nav {
+          .dropbtn {
+              display: none;
+          }
+          .logo {width: 100%;}
+      }
+  }

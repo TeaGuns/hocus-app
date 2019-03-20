@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic");
+html {
+  background-color: #fff;
+  background-image: url(../images/hocusbg-light.svg);
+  background-size: 600px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #1B0B38; }
+
+p {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  color: #1B0B38; }
+  a:hover {
+    color: #1DD1A1; }
+
+div {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.pricing-header {
+  padding-top: 10vh;
+  padding-bottom: 2vh; }
+
+.price-plan {
+  border: 1px solid #1B0B38;
+  padding: 1em 0;
+  background-color: #fff; }
+  .price-plan .price-plan-header {
+    padding-bottom: 2em; }
+    .price-plan .price-plan-header h1, .price-plan .price-plan-header h2, .price-plan .price-plan-header h3, .price-plan .price-plan-header p {
+      line-height: 0.35em; }
+    .price-plan .price-plan-header .subtext {
+      color: #808086;
+      font-size: 0.85em; }
+  .price-plan p {
+    line-height: 1em; }
+  .price-plan .btn-holder {
+    justify-content: center;
+    align-content: center;
+    display: flex; }
+
+.button {
+  background-color: #1DD1A1;
+  border: none;
+  width: 25%;
+  min-width: 200px;
+  color: #1B0B38;
+  text-decoration: none;
+  font-size: 16px;
+  height: 4em;
+  font-weight: 700;
+  cursor: pointer; }
+  .button p {
+    display: inline; }
+  .button svg {
+    fill: #1B0B38;
+    margin-left: .5em; }
+
+.button:hover {
+  background-color: #1B0B38;
+  color: #fff; }
+  .button:hover svg {
+    fill: #fff; }
+
+/*# sourceMappingURL=pricing.css.map */
